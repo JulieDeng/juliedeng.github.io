@@ -1,0 +1,29 @@
+mixin design-img(link, img, color)
+  a(href="#{link}" data-color="#{color}").design-img-link
+    img(src="assets/img/design-img/#{img}")
+
+section.design#design
+  .flex.flex--center
+    .col-50.flex.flex--center.dribbble(data-orig-color="#ea4c89")
+      .col-1
+        p.home-lead ...Updating Photos...
+        +design-img('https://goo.gl/photos/x4a5uLe8KBwnv7xg6', 'drib-1.jpg', 'orange')
+        +design-img('https://goo.gl/photos/XhL61GwX5e27duk6A', 'drib-2.jpg', '#aeb3b0')
+        +design-img('https://goo.gl/photos/x4a5uLe8KBwnv7xg6', 'drib-3.jpg', '#38decc')
+        +design-img('https://goo.gl/photos/x4a5uLe8KBwnv7xg6', 'drib-4.jpg', '#d21d16')
+        //- +design-img('https://goo.gl/photos/x4a5uLe8KBwnv7xg6', 'drib-5.jpg', '#890cee')
+        //- +design-img('https://goo.gl/photos/x4a5uLe8KBwnv7xg6', 'drib-6.jpg', '#d6d599')
+        .cf
+        a(href="https://goo.gl/photos/x4a5uLe8KBwnv7xg6").home-cta See more on Google Photo
+    
+    .col-50.flex.flex--center.behance(data-orig-color="#1769ff")
+      .col-1
+        p.home-lead ...and Behance...
+        +design-img('https://www.behance.net/gallery/41401649/Youzhio-App-Design', 'be-1.png', '#5aabd5')
+        +design-img('https://www.behance.net/gallery/41402485/Kuaizhan-Mobile-App-Design', 'be-3.jpg', '#4c4c4c')
+        +design-img('https://www.behance.net/gallery/41396499/StreamLoan-Mobile-App10-Design-Sample', 'be-2.jpg', '#d32022')
+        +design-img('hhttps://www.behance.net/gallery/41402931/RISC-Website-Design', 'be-4.jpg', '#f59e82')
+        //- +design-img('https://www.behance.net/gallery/13152153/Rolling-Tree-Community', 'be-5.jpg', '#d57628')
+        //- +design-img('https://www.behance.net/gallery/9709469/Dribbble-Shoot-out', 'be-6.png', '#f6c599')
+        .cf
+        a(href="https://www.behance.net/juliedeng3888d").home-cta See more on Behance

@@ -1,0 +1,26 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    //li: a(href="#mentoring") Mentoring
+    li: a(href="#project") Project
+    //li: a(href="#vine") Vine
+    li: a(href="#design") Design
+    //li: a(href="#notes") Notes
+    //li: a(href="#podcast") Podcast
+    li: a(href="#contact") Contact
+
+//.mobile-nav
+//  +nav-content()
+//  span
+
+
+header
+  .header-position
+    h1.logo
+    
+    nav.site-nav
+      +nav-content()
+    
+    a(href="mailto:shuyindeng@berkeley.edu").email-link +email me
+    
+    //.mobile-nav-toggle: span
