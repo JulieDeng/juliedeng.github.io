@@ -1,4 +1,4 @@
-name: Travis Neilson
+name: Julie Deng
 markdown: redcarpet
 exclude: ["node_modules",
   "gulpfile.js",
